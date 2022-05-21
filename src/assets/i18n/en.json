@@ -1,0 +1,47 @@
+{
+    "login": {
+      "title": "Login",
+      "username-label":"Username",
+      "username": "Enter your username",
+      "password-label":"Password",
+      "password": "Enter your password",
+      "logged-in": "You are logged in as",
+      "error": "There was an error signing in, check your username & password and try again."
+    },
+    "logout":"Logout",
+    "hardware":{
+        "hardware":"Hardware",
+        "list":"Hardware list",
+        "details":"Details about",
+        "code":"Code",
+        "name":"Name",
+        "type":"Type",
+        "stock":"Stock",
+        "price":"Price",
+        "review": "Reviews for this hardware:",
+        "no-review": "Currently there is no reviews for this hardware:",
+        "installments":{
+            "bought":"This hardware can be bought",
+            "installment":"installments"
+        },
+        "add":{
+            "add":"Add",
+            "new":"Add new"
+        }
+    },
+    "language": {
+        "selected": "The currently selected language",
+        "select": "Select language",
+        "hr":"Croatian",
+        "en":"English"
+    },
+    "back":"Go back",
+    "404": {
+        "pageNotFoundMessage": "The requested page was not found",
+        "returnToHomepage": "Return to home page"
+    },
+    "403": {
+        "pageForbiddenMessage": "Insufficient privileges to access this page!",
+        "returnToHomepage": "Return to home page"
+    }
+  }

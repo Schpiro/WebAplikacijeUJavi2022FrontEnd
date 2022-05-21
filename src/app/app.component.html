@@ -1,4 +1,11 @@
 <div class="container-fluid">
+  <div class="w-100 text-start">
+    Selected language: {{translate.currentLang}}
+  </div>
+  <div class="w-100 text-start">select language
+    <button (click)="setLanguage('hr')">hr</button>
+    <button (click)="setLanguage('en')">en</button>
+  </div>
   <div class="w-100 text-end" *ngIf="authenticationService.isUserAuthenticated()">Prijavljeni ste kao
     <strong>{{authenticationService.getAuthenticatedUserUsername()}}</strong> | <a href="#" (click)="logout()" class="link-primary">Odjava</a>
   </div>

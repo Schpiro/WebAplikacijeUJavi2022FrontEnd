@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {AuthenticationService} from "./security/authentication.service";
 import {Router} from "@angular/router";
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +13,13 @@ export class AppComponent {
 
   constructor(
     public authenticationService: AuthenticationService,
-    private router: Router
-  ) {
+    private router: Router,
+    public translate: TranslateService 
+  )
+  {
+    translate.addLangs(['en', 'hr']);
+    translate.setDefaultLang('hr');
+    translate.use('hr');
   }
 
   logout() {
@@ -21,4 +27,7 @@ export class AppComponent {
     this.router.navigate(['/login']).then();
   }
 
+  setLanguage(lang: string){
+    this.translate.use(lang);
+  }
 }
