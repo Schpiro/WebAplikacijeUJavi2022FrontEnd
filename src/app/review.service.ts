@@ -25,7 +25,7 @@ export class ReviewService {
 
     return this.http.get<Review[]>(this.reviewsUrl, {params})
       .pipe(
-        tap(_ => console.log('fetched reviews hardwareCode=${hardwareCode}')),
+        tap(_ => console.log(`fetched reviews hardwareCode=${hardwareCode}`)),
         catchError(this.handleError<Review[]>('getReviewsByHardwareCode hardwareCode=${hardwareCode}', []))
       );
   }
